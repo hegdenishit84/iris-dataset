@@ -37,7 +37,8 @@ def predict_iris():
     else:
         pred_class = 'iris-virginica'
         
-    return pred_class
+    #return pred_class
+    return render_template('result.html', result=pred_class)
 
 
 @app.route('/predict_file', methods=['GET', 'POST'])
